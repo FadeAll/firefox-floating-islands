@@ -23,66 +23,71 @@ The theme is designed around compact rounded panels and floating navigation
 
 ## Structure
 
-```text
-firefox-floating-islands/
-├── userChrome.css
-├── preview.png
-├── .gitignore
-└── css/
-    ├── toolbox.css
-    ├── navbar.css
-    ├── urlbar.css
-    ├── buttons.css
-    ├── panels.css
-    ├── sidebar.css
-    ├── vertical-tabs.css
-    └── fullscreen.css```
-The main userChrome.css imports all modules from the css/ directory.
+The project is organized into separate CSS modules:
+
+- `userChrome.css` — main entry point that imports all CSS modules.
+- `css/toolbox.css` — Firefox toolbar configuration.
+- `css/navbar.css` — floating navigation bar.
+- `css/urlbar.css` — address bar styling.
+- `css/buttons.css` — toolbar and menu buttons.
+- `css/panels.css` — panels and popup elements.
+- `css/sidebar.css` — floating sidebar.
+- `css/vertical-tabs.css` — vertical tabs and tab controls.
+- `css/fullscreen.css` — fullscreen behavior.
 
 ## Installation
-1. Enable userChrome.css
+
+### 1. Enable userChrome.css
 
 Open Firefox and go to:
 
-about:config
+`about:config`
 
 Set:
 
-toolkit.legacyUserProfileCustomizations.stylesheets = true
-2. Find your Firefox profile
+`toolkit.legacyUserProfileCustomizations.stylesheets`
+
+to:
+
+`true`
+
+### 2. Find your Firefox profile
 
 Open:
 
-about:support
+`about:support`
 
-Find Profile Directory and open it.
+Find **Profile Directory** and open it.
 
-Create a directory:
+Create a directory named:
 
-chrome
-3. Install the theme
+`chrome`
 
-Copy:
+### 3. Install the theme
 
-userChrome.css
-css/
-
-into the chrome directory.
+Copy `userChrome.css` and the `css/` directory into the `chrome` directory.
 
 The resulting structure should be:
 
-chrome/
-├── userChrome.css
-└── css/
-    ├── buttons.css
-    ├── fullscreen.css
-    ├── navbar.css
-    ├── panels.css
-    ├── sidebar.css
-    ├── toolbox.css
-    ├── urlbar.css
-    └── vertical-tabs.css
-4. Restart Firefox
+`chrome/userChrome.css`
+
+`chrome/css/toolbox.css`
+
+`chrome/css/navbar.css`
+
+`chrome/css/urlbar.css`
+
+`chrome/css/buttons.css`
+
+`chrome/css/panels.css`
+
+`chrome/css/sidebar.css`
+
+`chrome/css/vertical-tabs.css`
+
+`chrome/css/fullscreen.css`
+
+### 4. Restart Firefox
 
 Restart Firefox after installing the files.
 
@@ -90,13 +95,11 @@ Restart Firefox after installing the files.
 
 This theme targets modern Firefox with vertical tabs support.
 
-Because Firefox's internal UI structure can change between versions, some selectors may require updates after major Firefox releases.
+Firefox's internal UI structure may change between versions, so some selectors may require updates after major Firefox releases.
 
 ## Development
 
-The CSS is intentionally separated into modules so individual parts of the interface can be modified without editing one large stylesheet.
-
-Changes can be tested by restarting Firefox after editing the CSS files.
+The CSS is separated into modules so individual parts of the interface can be modified independently.
 
 ## License
 

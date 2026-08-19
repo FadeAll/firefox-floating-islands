@@ -1,0 +1,48 @@
+#nav-bar toolbarseparator,
+#nav-bar .toolbarseparator {
+    display: none !important;
+}
+
+#urlbar-container moz-button,
+#urlbar moz-button {
+    --button-border-radius: 999px !important;
+}
+
+#urlbar-container moz-button::part(button),
+#urlbar moz-button::part(button) {
+    border-radius: 999px !important;
+}
+
+#identity-box,
+#tracking-protection-icon-container,
+#identity-permission-box,
+#tracking-protection-icon-box,
+#notification-popup-box,
+#star-button-box,
+#star-button,
+#urlbar-go-button,
+.urlbar-icon,
+.urlbar-page-action {
+    border-radius: 999px !important;
+}
+
+#trust-icon-container:hover {
+    border-radius: 999px !important;
+}
+
+#urlbar#urlbar > *:not(:has(#urlbar-input)) {
+    border-radius: 20px !important;
+}
+
+panel-list,
+moz-panel-list,
+[id*="panel-list"] {
+    border-radius: 20px !important;
+
+    --button-border-radius: 8px !important;
+    --panel-list-border-radius: 20px !important;
+    --border-radius-small: 20px !important;
+    --border-radius-medium: 20px !important;
+    --border-radius-large: 20px !important;
+    --arrowpanel-border-radius: 20px !important;
+}

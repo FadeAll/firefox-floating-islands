@@ -1,0 +1,35 @@
+#nav-bar {
+    position: relative !important;
+
+    width: fit-content !important;
+    height: auto !important;
+    min-height: unset !important;
+
+    margin: 0 auto !important;
+    padding: 4px 8px !important;
+
+    background: var(--toolbar-bgcolor, #2B2A33) !important;
+
+    border: 1px solid rgba(128, 128, 128, 0.20) !important;
+    border-radius: 0 0 20px 20px !important;
+
+    box-shadow: none !important;
+}
+
+#nav-bar-customization-target {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 6px !important;
+
+    background: transparent !important;
+}
+
+#nav-bar-customization-target > * {
+    flex: 0 0 auto !important;
+}
+
+#tabbrowser-tabpanels {
+    padding-top: 55px !important;
+}

@@ -1,0 +1,43 @@
+#urlbar-container {
+    width: 400px !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#urlbar {
+    border-radius: 20px !important;
+    overflow: hidden !important;
+
+    --urlbar-icon-border-radius: 999px !important;
+    --toolbarbutton-border-radius: 999px !important;
+}
+
+#urlbar-background {
+    background: var(
+        --urlbar-box-bgcolor,
+        rgba(255, 255, 255, 0.08)
+    ) !important;
+
+    border: 1px solid rgba(128, 128, 128, 0.20) !important;
+    border-radius: 20px !important;
+
+    box-shadow: none !important;
+}
+
+#urlbar-input-container {
+    border-radius: 20px !important;
+}
+
+#urlbar[focused="true"],
+#urlbar[focused="true"] > #urlbar-background,
+#urlbar[breakout][breakout-extend],
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+    border-radius: 20px !important;
+}
+
+#urlbar-input {
+    border-radius: 0 !important;
+}

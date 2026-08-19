@@ -1,0 +1,72 @@
+#nav-bar .toolbarbutton-1 {
+    width: 32px !important;
+    height: 32px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: rgba(255, 255, 255, 0.04) !important;
+
+    border: 1px solid rgba(128, 128, 128, 0.15) !important;
+    border-radius: 50% !important;
+
+    box-shadow: none !important;
+    transition: none !important;
+}
+
+#nav-bar .toolbarbutton-1:hover {
+    background: rgba(255, 255, 255, 0.10) !important;
+    border-color: rgba(128, 128, 128, 0.30) !important;
+
+    transform: none !important;
+}
+
+#nav-bar .toolbarbutton-1:active {
+    transform: none !important;
+}
+
+#nav-bar .toolbarbutton-1[disabled="true"] {
+    opacity: 0.4 !important;
+}
+
+#nav-bar .toolbarbutton-1,
+#nav-bar toolbarbutton,
+#nav-bar .toolbaritem {
+    align-self: center !important;
+    vertical-align: middle !important;
+}
+
+#nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack {
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+moz-button:has(#PanelUI-menu-button) {
+    width: 32px !important;
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+
+    border-radius: 50% !important;
+    overflow: hidden !important;
+
+    --button-border-radius: 999px !important;
+    --button-min-height: 32px !important;
+    --button-min-height-small: 32px !important;
+    --button-min-height-large: 32px !important;
+    --button-padding-block: 0 !important;
+}
+
+moz-button:has(#PanelUI-menu-button)::part(button) {
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+
+    border-radius: 999px !important;
+}
+
+#PanelUI-menu-button {
+    max-height: 32px !important;
+    border-radius: 999px !important;
+}

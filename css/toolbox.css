@@ -1,0 +1,25 @@
+#navigator-toolbox {
+    position: fixed !important;
+    top: 0px !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: auto !important;
+    height: auto !important;
+
+    pointer-events: none !important;
+    z-index: 9999 !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#navigator-toolbox > * {
+    pointer-events: auto !important;
+}
+
+#TabsToolbar,
+#PersonalToolbar,
+#toolbar-menubar {
+    visibility: collapse !important;
+}

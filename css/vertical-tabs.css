@@ -1,0 +1,82 @@
+#tabbrowser-tabs[orient="vertical"]
+.tab-content > :not(.tab-icon-stack) {
+    display: none !important;
+}
+
+#tabbrowser-tabs[orient="vertical"] .tab-content {
+    justify-content: center !important;
+    padding-inline: 0 !important;
+}
+
+#tabbrowser-tabs[orient="vertical"] .tab-background {
+    border-radius: 999px !important;
+}
+
+#pinned-tabs-container {
+    height: auto !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+    scrollbar-width: none !important;
+}
+
+#tabbrowser-tabs[orient="vertical"] arrowscrollbox {
+    scrollbar-width: none !important;
+}
+
+#tabs-newtab-button > .toolbarbutton-text,
+#tabs-newtab-button label,
+#vertical-tabs-new-tab-button > .toolbarbutton-text,
+#vertical-tabs-new-tab-button label {
+    display: none !important;
+}
+
+#tabs-newtab-button,
+#vertical-tabs-new-tab-button {
+    justify-content: center !important;
+    padding-inline: 0 !important;
+}
+
+#tabbrowser-tabs[orient="vertical"] .tab-stack {
+    position: relative !important;
+}
+
+#tabbrowser-tabs[orient="vertical"]
+.tabbrowser-tab:hover
+.tab-close-button {
+    display: flex !important;
+
+    position: absolute !important;
+
+    top: -1px !important;
+    left: -1px !important;
+
+    width: 16px !important;
+    height: 16px !important;
+
+    padding: 2px !important;
+
+    border-radius: 50% !important;
+
+    background: rgba(100, 100, 100, 0.65) !important;
+
+    box-shadow: none !important;
+
+    z-index: 1 !important;
+}
+
+#tabbrowser-tabs[orient="vertical"]
+.tabbrowser-tab[selected="true"]
+.tab-background,
+
+#tabbrowser-tabs[orient="vertical"]
+.tabbrowser-tab[visuallyselected="true"]
+.tab-background {
+    box-shadow: none !important;
+
+    border: 2px solid rgba(180, 180, 180, 0.40) !important;
+}
+
+#tabbrowser-tabs[orient="vertical"] {
+    transform: translateY(5px) !important;
+}

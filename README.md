@@ -26,20 +26,20 @@ The theme is designed around compact rounded panels and floating navigation
 ```text
 firefox-floating-islands/
 ├── userChrome.css
+├── preview.png
 ├── .gitignore
 └── css/
-    ├── buttons.css
-    ├── fullscreen.css
+    ├── toolbox.css
     ├── navbar.css
+    ├── urlbar.css
+    ├── buttons.css
     ├── panels.css
     ├── sidebar.css
-    ├── toolbox.css
-    ├── urlbar.css
-    └── vertical-tabs.css
-
+    ├── vertical-tabs.css
+    └── fullscreen.css```
 The main userChrome.css imports all modules from the css/ directory.
 
-Installation
+## Installation
 1. Enable userChrome.css
 
 Open Firefox and go to:
@@ -49,10 +49,6 @@ about:config
 Set:
 
 toolkit.legacyUserProfileCustomizations.stylesheets = true
-
-to:
-
-true
 2. Find your Firefox profile
 
 Open:
@@ -90,18 +86,18 @@ chrome/
 
 Restart Firefox after installing the files.
 
-Compatibility
+## Compatibility
 
 This theme targets modern Firefox with vertical tabs support.
 
 Because Firefox's internal UI structure can change between versions, some selectors may require updates after major Firefox releases.
 
-Development
+## Development
 
 The CSS is intentionally separated into modules so individual parts of the interface can be modified without editing one large stylesheet.
 
 Changes can be tested by restarting Firefox after editing the CSS files.
 
-License
+## License
 
 MIT License.

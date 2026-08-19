@@ -15,7 +15,6 @@
 #pinned-tabs-container {
     height: auto !important;
     max-height: none !important;
-
     overflow: visible !important;
     scrollbar-width: none !important;
 }
@@ -45,7 +44,6 @@
 .tabbrowser-tab:hover
 .tab-close-button {
     display: flex !important;
-
     position: absolute !important;
 
     top: -1px !important;
@@ -57,11 +55,7 @@
     padding: 2px !important;
 
     border-radius: 50% !important;
-
     background: rgba(100, 100, 100, 0.65) !important;
-
-    box-shadow: none !important;
-
     z-index: 1 !important;
 }
 
@@ -72,8 +66,6 @@
 #tabbrowser-tabs[orient="vertical"]
 .tabbrowser-tab[visuallyselected="true"]
 .tab-background {
-    box-shadow: none !important;
-
     border: 2px solid rgba(180, 180, 180, 0.40) !important;
 }
 

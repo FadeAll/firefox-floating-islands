@@ -23,18 +23,9 @@
 
     border: 1px solid rgba(128, 128, 128, 0.20) !important;
     border-radius: 20px !important;
-
-    box-shadow: none !important;
 }
 
 #urlbar-input-container {
-    border-radius: 20px !important;
-}
-
-#urlbar[focused="true"],
-#urlbar[focused="true"] > #urlbar-background,
-#urlbar[breakout][breakout-extend],
-#urlbar[breakout][breakout-extend] > #urlbar-background {
     border-radius: 20px !important;
 }
 

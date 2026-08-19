@@ -2,18 +2,12 @@
 #navigator-toolbox {
     visibility: visible !important;
     opacity: 1 !important;
-    transform: none !important;
-
-    margin-top: 0 !important;
     top: 8px !important;
 }
 
 :root[inDOMFullscreen] #navigator-toolbox {
     visibility: collapse !important;
     opacity: 0 !important;
-
-    transform: none !important;
-
     pointer-events: none !important;
     top: auto !important;
 }
